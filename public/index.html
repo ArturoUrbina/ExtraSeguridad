@@ -1,0 +1,21 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">
+  <title>My Aplicación con Sockets</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/aes.js"></script>
+  <script src="/main.js"></script>
+</head>  
+<body>  
+  <h1>CHAT CON NODE JS</h1>
+  <div id="messages"></div>
+  <br/>
+  <form onsubmit="return addMessage(this)">
+    <input type="text" id="username" placeholder="Tu Nombre" >
+    <input type="text" id="text" placeholder="Mensaje...">
+	<input type="text" id="password" placeholder="Contraseña">
+    <input type="button" value="Enviar!" onclick="addMessage(this);">
+  </form>
+</body>  
+</html>
